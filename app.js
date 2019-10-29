@@ -4,6 +4,12 @@ import image from './data/images.js';
 
 const myList = document.getElementById('my-list');
 
+image.forEach(image => {
+    const htmlString = renderImage(image);
 
+    const dom = htmlToDOM(htmlString);
+
+    myList.appendChild(dom);
+});
 
 
