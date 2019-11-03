@@ -8,14 +8,14 @@ const imageTypeFilter = document.querySelector('.filter');
 
 imageTypeFilter.addEventListener('change', () => {
     const filterString = imageTypeFilter.value;
-    let filteredImage = null;
-
-    if(!filterString) {
-        filteredImage = image;
-    }
+    let filteredImages = null;
+    console.log(filteredImages);
+    if (!filterString) {
+        filteredImages = image;
+    } 
     else {
-        filteredImage = image.filter(image => {
-            if (image.keyword === filteredImage) {
+        filteredImages = image.filter(images => {
+            if (images.keyword === filteredImages) {
                 return true;
             }
             else {
@@ -23,14 +23,14 @@ imageTypeFilter.addEventListener('change', () => {
             }
         });
     }
-
-    const myImages = filteredImage.map(image => {
+    console.log(filteredImages);
+    const myImages = filteredImages.map(images => {
         return {
-            title: image.title,
-            url: image.url,
-            horns: image.horns,
-            description: image.description,
-            keyword: image.keyword
+            title: images.title,
+            url: images.url,
+            horns: images.horns,
+            description: images.description,
+            keyword: images.keyword
         };
     });
 
@@ -55,12 +55,12 @@ const initialImages = image.map(mapFunc);
 
 render(initialImages);
 
-function render(images) {
+function render(imagesToRender) {
     while (myList.lastElementChild) {
         myList.lastElementChild.remove();
     }
 
-    images.forEach(image => {
+    imagesToRender.forEach(image => {
         const htmlString = renderImage(image);
         const dom = htmlToDOM(htmlString);
         myList.appendChild(dom);
