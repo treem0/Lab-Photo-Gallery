@@ -84,7 +84,7 @@ const images = [
         horns: 2
     },
     {
-        url: 'http://www.zooborns.com/.a/6a010535647bf3970b0223c84d5959200c-800wi',
+        url: 'https://www.zooborns.com/.a/6a010535647bf3970b0223c84d5959200c-800wi',
         title: 'Baby markhor',
         description: 'Even the babies are adorable',
         keyword: 'markhor',
@@ -112,7 +112,7 @@ const images = [
         horns: 2
     },
     {
-        url: 'https://cdn.modernfarmer.com/wp-content/uploads/2014/08/chameleon.jpg',
+        url: 'http://cdn.modernfarmer.com/wp-content/uploads/2014/08/chameleon.jpg',
         title: 'Happy Jackson\'s Chameleon',
         description: 'These are really common in Hawaii',
         keyword: 'chameleon',

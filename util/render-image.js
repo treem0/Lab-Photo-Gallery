@@ -5,6 +5,7 @@ export default function renderImage(imageItem) {
     <img src="${imageItem.url}">
     <p>Horns: ${imageItem.horns}</p>
     <p>${imageItem.description}</p>
+    <p>${imageItem.keyword}</p>
 </li>
     `;
 
