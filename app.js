@@ -9,7 +9,7 @@ const imageTypeFilter = document.querySelector('.filter');
 imageTypeFilter.addEventListener('change', () => {
     const filterString = imageTypeFilter.value;
     let filteredImages = null;
-    console.log(filteredImages);
+    
     if (!filterString) {
         filteredImages = image;
     } 
@@ -23,7 +23,7 @@ imageTypeFilter.addEventListener('change', () => {
             }
         });
     }
-    console.log(filteredImages);
+    
     const myImages = filteredImages.map(images => {
         return {
             title: images.title,
