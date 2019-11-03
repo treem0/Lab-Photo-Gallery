@@ -22,6 +22,7 @@ test('renders html from the data', assert => {
         <img src="http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg">
         <p>Horns: 1</p>
         <p>A unicorn and a narwhal nuzzling their horns</p>
+        <p>narwhal</p>
 </li>
     `;
 
